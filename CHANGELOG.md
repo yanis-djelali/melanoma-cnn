@@ -4,7 +4,9 @@
 
 Réalisée après la soutenance, avec l'aide d'un assistant IA. Le code v1 est conservé sans modification dans `original/`.
 
-### Ajouté : éléments de l'énoncé non terminés en mai 2026
+Vérifiée en octobre 2026 : les 12 tests passent et `scripts/explore_data.py` tourne sur le dataset complet (Python 3.14, PyTorch CPU).
+
+### Ajouté
 
 - Grille d'exemples de 12 images (6 par classe) au lieu de 4 : `scripts/explore_data.py`.
 - Visualisation d'un batch de validation (`batch_val.png`), demandée en partie 3 : `scripts/explore_data.py`.
