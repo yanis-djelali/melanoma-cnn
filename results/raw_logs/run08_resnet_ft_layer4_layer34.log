@@ -1,0 +1,72 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 08 : ResNet18 fine-tuning layer4 (essai 2) puis layer3 + layer4. Les 4 lignes de traceback finales (NameError history_sched, chemin absolu) ont ete retirees.
+=== Train Partie 11 SKIPPE ===
+>>> Figure sauvegardee : courbes_resnet_gele.png
+
+=== Fine-tuning ResNet18 : layer4 + fc ===
+
+
+--- Parametres ResNet18 fine-tune layer4+fc ---
+Parametres entrainables : 8,394,754
+Parametres totaux       : 11,177,538
+Ratio entrainables/total : 75.1038%
+Epoch   1/20 | Loss train 0.3058 | Loss val 0.2244 | Acc train 0.865 | Acc val 0.912 | 14.5s
+Epoch   2/20 | Loss train 0.2450 | Loss val 0.2143 | Acc train 0.898 | Acc val 0.916 | 14.3s
+Epoch   3/20 | Loss train 0.2107 | Loss val 0.1665 | Acc train 0.912 | Acc val 0.945 | 14.3s
+Epoch   4/20 | Loss train 0.1893 | Loss val 0.2147 | Acc train 0.923 | Acc val 0.916 | 14.3s
+Epoch   5/20 | Loss train 0.1691 | Loss val 0.1760 | Acc train 0.932 | Acc val 0.938 | 14.3s
+Epoch   6/20 | Loss train 0.1574 | Loss val 0.1929 | Acc train 0.936 | Acc val 0.922 | 14.4s
+Epoch   7/20 | Loss train 0.1351 | Loss val 0.1792 | Acc train 0.946 | Acc val 0.939 | 14.3s
+Epoch   8/20 | Loss train 0.1228 | Loss val 0.2013 | Acc train 0.953 | Acc val 0.928 | 14.3s
+Epoch   9/20 | Loss train 0.1094 | Loss val 0.1867 | Acc train 0.956 | Acc val 0.938 | 14.3s
+Epoch  10/20 | Loss train 0.0997 | Loss val 0.2757 | Acc train 0.960 | Acc val 0.919 | 14.3s
+Epoch  11/20 | Loss train 0.0793 | Loss val 0.1958 | Acc train 0.970 | Acc val 0.940 | 14.4s
+Epoch  12/20 | Loss train 0.0875 | Loss val 0.1790 | Acc train 0.965 | Acc val 0.940 | 14.3s
+Epoch  13/20 | Loss train 0.0743 | Loss val 0.2138 | Acc train 0.971 | Acc val 0.934 | 14.4s
+Epoch  14/20 | Loss train 0.0638 | Loss val 0.2435 | Acc train 0.976 | Acc val 0.924 | 14.9s
+Epoch  15/20 | Loss train 0.0642 | Loss val 0.2917 | Acc train 0.977 | Acc val 0.917 | 14.5s
+Epoch  16/20 | Loss train 0.0602 | Loss val 0.2079 | Acc train 0.976 | Acc val 0.939 | 14.4s
+Epoch  17/20 | Loss train 0.0551 | Loss val 0.1868 | Acc train 0.980 | Acc val 0.944 | 14.3s
+Epoch  18/20 | Loss train 0.0460 | Loss val 0.2141 | Acc train 0.984 | Acc val 0.943 | 14.3s
+Epoch  19/20 | Loss train 0.0506 | Loss val 0.1652 | Acc train 0.982 | Acc val 0.945 | 14.9s
+Epoch  20/20 | Loss train 0.0437 | Loss val 0.2371 | Acc train 0.984 | Acc val 0.942 | 14.8s
+
+=== Fine-tuning layer4 termine ===
+
+=== Fine-tuning ResNet18 : layer3 + layer4 + fc ===
+
+
+--- Parametres ResNet18 fine-tune layer3+layer4+fc ---
+Parametres entrainables : 10,494,466
+Parametres totaux       : 11,177,538
+Ratio entrainables/total : 93.8889%
+Epoch   1/20 | Loss train 0.3042 | Loss val 0.2230 | Acc train 0.871 | Acc val 0.909 | 17.0s
+Epoch   2/20 | Loss train 0.2356 | Loss val 0.1880 | Acc train 0.900 | Acc val 0.935 | 17.0s
+Epoch   3/20 | Loss train 0.2033 | Loss val 0.2095 | Acc train 0.914 | Acc val 0.913 | 17.0s
+Epoch   4/20 | Loss train 0.1769 | Loss val 0.1999 | Acc train 0.930 | Acc val 0.908 | 17.0s
+Epoch   5/20 | Loss train 0.1586 | Loss val 0.1572 | Acc train 0.937 | Acc val 0.939 | 17.0s
+Epoch   6/20 | Loss train 0.1415 | Loss val 0.1810 | Acc train 0.943 | Acc val 0.933 | 17.1s
+Epoch   7/20 | Loss train 0.1313 | Loss val 0.1668 | Acc train 0.949 | Acc val 0.934 | 17.0s
+Epoch   8/20 | Loss train 0.1038 | Loss val 0.1354 | Acc train 0.959 | Acc val 0.954 | 17.0s
+Epoch   9/20 | Loss train 0.0930 | Loss val 0.1991 | Acc train 0.965 | Acc val 0.927 | 17.0s
+Epoch  10/20 | Loss train 0.0878 | Loss val 0.1341 | Acc train 0.967 | Acc val 0.947 | 17.2s
+Epoch  11/20 | Loss train 0.0869 | Loss val 0.1357 | Acc train 0.969 | Acc val 0.954 | 17.0s
+Epoch  12/20 | Loss train 0.0590 | Loss val 0.1714 | Acc train 0.978 | Acc val 0.946 | 17.1s
+Epoch  13/20 | Loss train 0.0660 | Loss val 0.1767 | Acc train 0.976 | Acc val 0.947 | 17.1s
+Epoch  14/20 | Loss train 0.0525 | Loss val 0.1662 | Acc train 0.980 | Acc val 0.949 | 17.1s
+Epoch  15/20 | Loss train 0.0526 | Loss val 0.1731 | Acc train 0.980 | Acc val 0.952 | 17.0s
+Epoch  16/20 | Loss train 0.0451 | Loss val 0.2106 | Acc train 0.985 | Acc val 0.947 | 17.0s
+Epoch  17/20 | Loss train 0.0473 | Loss val 0.1803 | Acc train 0.982 | Acc val 0.943 | 17.4s
+Epoch  18/20 | Loss train 0.0514 | Loss val 0.1711 | Acc train 0.981 | Acc val 0.949 | 17.1s
+Epoch  19/20 | Loss train 0.0393 | Loss val 0.1628 | Acc train 0.986 | Acc val 0.954 | 17.0s
+Epoch  20/20 | Loss train 0.0402 | Loss val 0.1894 | Acc train 0.986 | Acc val 0.947 | 17.0s
+
+=== Fine-tuning layer3+layer4 termine ===
+>>> Figure sauvegardee : comparaison_finetuning.png
+
+=== Tableau recapitulatif final ===
+Modele                                   | Best val_acc 
+------------------------------------------------------------
+CNN simple (Partie 5)                    | 0.9360
+CNN + norm (Partie 6)                    | 0.9450
+CNN + norm + aug (Partie 7)              | 0.9250

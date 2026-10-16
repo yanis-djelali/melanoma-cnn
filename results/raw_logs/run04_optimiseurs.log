@@ -1,0 +1,86 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 04 : comparaison des optimiseurs sur le pipeline norm + augmentation.
+=== Train Partie 7 SKIPPE ===
+>>> Figure sauvegardee : comparaison_augmentation.png
+
+=== Entrainement : Adam_lr1e-3 ===
+
+Epoch   1/20 | Loss train 0.4434 | Loss val 0.3766 | Acc train 0.800 | Acc val 0.829 | 11.0s
+Epoch   2/20 | Loss train 0.3890 | Loss val 0.3562 | Acc train 0.831 | Acc val 0.852 | 10.4s
+Epoch   3/20 | Loss train 0.3685 | Loss val 0.3818 | Acc train 0.833 | Acc val 0.822 | 10.3s
+Epoch   4/20 | Loss train 0.3487 | Loss val 0.3683 | Acc train 0.850 | Acc val 0.850 | 10.4s
+Epoch   5/20 | Loss train 0.3387 | Loss val 0.3119 | Acc train 0.852 | Acc val 0.884 | 10.4s
+Epoch   6/20 | Loss train 0.3229 | Loss val 0.3405 | Acc train 0.862 | Acc val 0.851 | 10.4s
+Epoch   7/20 | Loss train 0.3167 | Loss val 0.4088 | Acc train 0.866 | Acc val 0.799 | 10.4s
+Epoch   8/20 | Loss train 0.3069 | Loss val 0.3383 | Acc train 0.867 | Acc val 0.854 | 10.4s
+Epoch   9/20 | Loss train 0.3076 | Loss val 0.3116 | Acc train 0.870 | Acc val 0.861 | 10.4s
+Epoch  10/20 | Loss train 0.2939 | Loss val 0.2775 | Acc train 0.876 | Acc val 0.884 | 10.5s
+Epoch  11/20 | Loss train 0.2878 | Loss val 0.2972 | Acc train 0.878 | Acc val 0.875 | 10.6s
+Epoch  12/20 | Loss train 0.2844 | Loss val 0.2936 | Acc train 0.879 | Acc val 0.883 | 10.6s
+Epoch  13/20 | Loss train 0.2774 | Loss val 0.2809 | Acc train 0.880 | Acc val 0.886 | 10.4s
+Epoch  14/20 | Loss train 0.2740 | Loss val 0.2811 | Acc train 0.883 | Acc val 0.887 | 10.6s
+Epoch  15/20 | Loss train 0.2681 | Loss val 0.2542 | Acc train 0.884 | Acc val 0.905 | 10.8s
+Epoch  16/20 | Loss train 0.2669 | Loss val 0.2843 | Acc train 0.891 | Acc val 0.879 | 11.0s
+Epoch  17/20 | Loss train 0.2594 | Loss val 0.3048 | Acc train 0.891 | Acc val 0.863 | 10.5s
+Epoch  18/20 | Loss train 0.2616 | Loss val 0.2796 | Acc train 0.893 | Acc val 0.882 | 10.4s
+Epoch  19/20 | Loss train 0.2533 | Loss val 0.2757 | Acc train 0.894 | Acc val 0.891 | 10.4s
+Epoch  20/20 | Loss train 0.2535 | Loss val 0.2616 | Acc train 0.895 | Acc val 0.904 | 10.4s
+=== Fin Adam_lr1e-3 ===
+
+=== Entrainement : Adam_lr1e-4 ===
+
+Epoch   1/20 | Loss train 0.4415 | Loss val 0.4171 | Acc train 0.800 | Acc val 0.791 | 10.4s
+Epoch   2/20 | Loss train 0.3778 | Loss val 0.3221 | Acc train 0.833 | Acc val 0.863 | 10.4s
+Epoch   3/20 | Loss train 0.3486 | Loss val 0.3192 | Acc train 0.846 | Acc val 0.866 | 10.4s
+Epoch   4/20 | Loss train 0.3226 | Loss val 0.3137 | Acc train 0.861 | Acc val 0.879 | 10.4s
+Epoch   5/20 | Loss train 0.3078 | Loss val 0.3085 | Acc train 0.868 | Acc val 0.883 | 10.4s
+Epoch   6/20 | Loss train 0.3034 | Loss val 0.2742 | Acc train 0.866 | Acc val 0.902 | 10.4s
+Epoch   7/20 | Loss train 0.2937 | Loss val 0.2864 | Acc train 0.873 | Acc val 0.896 | 10.4s
+Epoch   8/20 | Loss train 0.2855 | Loss val 0.2838 | Acc train 0.879 | Acc val 0.891 | 10.4s
+Epoch   9/20 | Loss train 0.2810 | Loss val 0.2661 | Acc train 0.881 | Acc val 0.913 | 10.4s
+Epoch  10/20 | Loss train 0.2757 | Loss val 0.2713 | Acc train 0.884 | Acc val 0.899 | 10.5s
+Epoch  11/20 | Loss train 0.2697 | Loss val 0.2407 | Acc train 0.886 | Acc val 0.922 | 10.5s
+Epoch  12/20 | Loss train 0.2613 | Loss val 0.2649 | Acc train 0.888 | Acc val 0.905 | 10.5s
+Epoch  13/20 | Loss train 0.2621 | Loss val 0.2504 | Acc train 0.889 | Acc val 0.914 | 10.5s
+Epoch  14/20 | Loss train 0.2521 | Loss val 0.2653 | Acc train 0.890 | Acc val 0.900 | 10.5s
+Epoch  15/20 | Loss train 0.2572 | Loss val 0.2430 | Acc train 0.893 | Acc val 0.915 | 10.6s
+Epoch  16/20 | Loss train 0.2512 | Loss val 0.2453 | Acc train 0.894 | Acc val 0.913 | 10.5s
+Epoch  17/20 | Loss train 0.2476 | Loss val 0.2337 | Acc train 0.894 | Acc val 0.924 | 10.5s
+Epoch  18/20 | Loss train 0.2416 | Loss val 0.2355 | Acc train 0.900 | Acc val 0.927 | 10.5s
+Epoch  19/20 | Loss train 0.2406 | Loss val 0.2491 | Acc train 0.898 | Acc val 0.908 | 10.5s
+Epoch  20/20 | Loss train 0.2418 | Loss val 0.2307 | Acc train 0.898 | Acc val 0.916 | 10.6s
+=== Fin Adam_lr1e-4 ===
+
+=== Entrainement : SGD_lr1e-2_mom09 ===
+
+Epoch   1/20 | Loss train 0.4748 | Loss val 0.4094 | Acc train 0.785 | Acc val 0.818 | 9.9s
+Epoch   2/20 | Loss train 0.4135 | Loss val 0.3998 | Acc train 0.814 | Acc val 0.809 | 10.0s
+Epoch   3/20 | Loss train 0.4007 | Loss val 0.3905 | Acc train 0.822 | Acc val 0.827 | 10.0s
+Epoch   4/20 | Loss train 0.3800 | Loss val 0.3363 | Acc train 0.831 | Acc val 0.873 | 9.9s
+Epoch   5/20 | Loss train 0.3688 | Loss val 0.3939 | Acc train 0.833 | Acc val 0.833 | 10.1s
+Epoch   6/20 | Loss train 0.3548 | Loss val 0.3851 | Acc train 0.841 | Acc val 0.820 | 9.8s
+Epoch   7/20 | Loss train 0.3480 | Loss val 0.2954 | Acc train 0.845 | Acc val 0.900 | 9.9s
+Epoch   8/20 | Loss train 0.3331 | Loss val 0.3357 | Acc train 0.854 | Acc val 0.859 | 10.0s
+Epoch   9/20 | Loss train 0.3188 | Loss val 0.3404 | Acc train 0.864 | Acc val 0.853 | 9.9s
+Epoch  10/20 | Loss train 0.3232 | Loss val 0.3042 | Acc train 0.858 | Acc val 0.884 | 9.9s
+Epoch  11/20 | Loss train 0.3094 | Loss val 0.2793 | Acc train 0.865 | Acc val 0.885 | 10.0s
+Epoch  12/20 | Loss train 0.3007 | Loss val 0.3128 | Acc train 0.871 | Acc val 0.865 | 10.1s
+Epoch  13/20 | Loss train 0.2946 | Loss val 0.3030 | Acc train 0.872 | Acc val 0.896 | 10.0s
+Epoch  14/20 | Loss train 0.2963 | Loss val 0.2707 | Acc train 0.874 | Acc val 0.903 | 9.9s
+Epoch  15/20 | Loss train 0.2835 | Loss val 0.2487 | Acc train 0.877 | Acc val 0.907 | 10.0s
+Epoch  16/20 | Loss train 0.2760 | Loss val 0.2951 | Acc train 0.879 | Acc val 0.873 | 9.9s
+Epoch  17/20 | Loss train 0.2749 | Loss val 0.3613 | Acc train 0.882 | Acc val 0.844 | 9.9s
+Epoch  18/20 | Loss train 0.2760 | Loss val 0.2685 | Acc train 0.880 | Acc val 0.888 | 9.9s
+Epoch  19/20 | Loss train 0.2765 | Loss val 0.2466 | Acc train 0.882 | Acc val 0.917 | 9.9s
+Epoch  20/20 | Loss train 0.2659 | Loss val 0.2951 | Acc train 0.888 | Acc val 0.889 | 9.9s
+=== Fin SGD_lr1e-2_mom09 ===
+
+>>> Figure sauvegardee : comparaison_optimiseurs.png
+
+=== Tableau recapitulatif des meilleures accuracies val ===
+Configuration          | Best val_acc | Epoch 
+--------------------------------------------------
+Adam_lr1e-3            | 0.9055      | 15
+Adam_lr1e-4            | 0.9275      | 18
+SGD_lr1e-2_mom09       | 0.9175      | 19
+ICE default IO error handler doing an exit(), pid = 24105, errno = 32

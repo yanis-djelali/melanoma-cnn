@@ -1,0 +1,37 @@
+{
+  "description": "Correspondance entre les logs bruts (results/raw_logs) et les configurations. 'segment' = rang de l'entrainement dans le fichier (0 = premier 'Epoch 1/20'). 'reference' = run utilise dans le tableau de la soutenance.",
+  "experiments": {
+    "cnn_simple":        {"label": "CNN simple", "trainable_params": 12869410, "total_params": 12869410},
+    "cnn_norm":          {"label": "CNN + normalisation", "trainable_params": 12869410, "total_params": 12869410},
+    "cnn_norm_aug":      {"label": "CNN + norm + augmentation (Adam 1e-3)", "trainable_params": 12869410, "total_params": 12869410},
+    "cnn_adam_lr1e-4":   {"label": "CNN + norm + aug, Adam 1e-4", "trainable_params": 12869410, "total_params": 12869410},
+    "cnn_sgd":           {"label": "CNN + norm + aug, SGD 1e-2 momentum 0.9", "trainable_params": 12869410, "total_params": 12869410},
+    "cnn_steplr":        {"label": "CNN + norm + aug, Adam 1e-3 + StepLR", "trainable_params": 12869410, "total_params": 12869410},
+    "resnet_frozen":     {"label": "ResNet18 gele", "trainable_params": 1026, "total_params": 11177538},
+    "resnet_ft_layer4":  {"label": "ResNet18 fine-tuning layer4", "trainable_params": 8394754, "total_params": 11177538},
+    "resnet_ft_layer34": {"label": "ResNet18 fine-tuning layer3 + layer4", "trainable_params": 10494466, "total_params": 11177538}
+  },
+  "runs": [
+    {"log": "run01_cnn_simple.log",               "segment": 0, "experiment": "cnn_simple",        "trial": 1, "reference": false},
+    {"log": "run02_cnn_simple_cnn_norm.log",      "segment": 0, "experiment": "cnn_simple",        "trial": 2, "reference": false},
+    {"log": "run02_cnn_simple_cnn_norm.log",      "segment": 1, "experiment": "cnn_norm",          "trial": 1, "reference": false},
+    {"log": "run03_cnn_simple_norm_aug.log",      "segment": 0, "experiment": "cnn_simple",        "trial": 3, "reference": true},
+    {"log": "run03_cnn_simple_norm_aug.log",      "segment": 1, "experiment": "cnn_norm",          "trial": 2, "reference": true},
+    {"log": "run03_cnn_simple_norm_aug.log",      "segment": 2, "experiment": "cnn_norm_aug",      "trial": 1, "reference": true},
+    {"log": "run04_optimiseurs.log",              "segment": 0, "experiment": "cnn_norm_aug",      "trial": 2, "reference": false},
+    {"log": "run04_optimiseurs.log",              "segment": 1, "experiment": "cnn_adam_lr1e-4",   "trial": 1, "reference": true},
+    {"log": "run04_optimiseurs.log",              "segment": 2, "experiment": "cnn_sgd",           "trial": 1, "reference": true},
+    {"log": "run05_scheduler.log",                "segment": 0, "experiment": "cnn_steplr",        "trial": 1, "reference": true},
+    {"log": "run06_resnet_gele.log",              "segment": 0, "experiment": "resnet_frozen",     "trial": 1, "reference": true},
+    {"log": "run07_resnet_ft_layer4.log",         "segment": 0, "experiment": "resnet_ft_layer4",  "trial": 1, "reference": true},
+    {"log": "run08_resnet_ft_layer4_layer34.log", "segment": 0, "experiment": "resnet_ft_layer4",  "trial": 2, "reference": false},
+    {"log": "run08_resnet_ft_layer4_layer34.log", "segment": 1, "experiment": "resnet_ft_layer34", "trial": 1, "reference": true},
+    {"log": "run09_analyse_erreurs.log",          "segment": 0, "experiment": "resnet_ft_layer4",  "trial": 3, "reference": false}
+  ],
+  "confusion_matrix": {
+    "source": "run09_analyse_erreurs.log",
+    "model": "resnet_ft_layer4, essai 3, poids de fin d'epoch 20",
+    "classes": ["Benign", "Malignant"],
+    "matrix": [[947, 53], [68, 932]]
+  }
+}

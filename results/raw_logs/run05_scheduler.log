@@ -1,0 +1,32 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 05 : CNN + norm + augmentation, Adam lr=1e-3 avec StepLR(step_size=7, gamma=0.1). La colonne LR est celle utilisee pendant l'epoch.
+=== Train Partie 6 SKIPPE ===
+>>> Figure sauvegardee : comparaison_normalisation.png
+>>> Figure sauvegardee : augmentation_effet.png
+=== Train Partie 7 SKIPPE ===
+>>> Figure sauvegardee : comparaison_augmentation.png
+=== Entrainement avec scheduler StepLR ===
+Epoch   1/20 | Loss train 0.4543 | Loss val 0.3778 | Acc train 0.794 | Acc val 0.834 | LR 1.00e-03 | 10.7s
+Epoch   2/20 | Loss train 0.3841 | Loss val 0.4175 | Acc train 0.826 | Acc val 0.809 | LR 1.00e-03 | 11.2s
+Epoch   3/20 | Loss train 0.3632 | Loss val 0.2968 | Acc train 0.839 | Acc val 0.881 | LR 1.00e-03 | 11.3s
+Epoch   4/20 | Loss train 0.3386 | Loss val 0.2914 | Acc train 0.855 | Acc val 0.889 | LR 1.00e-03 | 12.0s
+Epoch   5/20 | Loss train 0.3266 | Loss val 0.2974 | Acc train 0.862 | Acc val 0.885 | LR 1.00e-03 | 11.1s
+Epoch   6/20 | Loss train 0.3097 | Loss val 0.2850 | Acc train 0.870 | Acc val 0.900 | LR 1.00e-03 | 11.1s
+Epoch   7/20 | Loss train 0.3005 | Loss val 0.2840 | Acc train 0.873 | Acc val 0.905 | LR 1.00e-03 | 10.8s
+Epoch   8/20 | Loss train 0.2678 | Loss val 0.2532 | Acc train 0.884 | Acc val 0.914 | LR 1.00e-04 | 10.9s
+Epoch   9/20 | Loss train 0.2610 | Loss val 0.2471 | Acc train 0.891 | Acc val 0.915 | LR 1.00e-04 | 11.0s
+Epoch  10/20 | Loss train 0.2574 | Loss val 0.2587 | Acc train 0.892 | Acc val 0.907 | LR 1.00e-04 | 11.0s
+Epoch  11/20 | Loss train 0.2555 | Loss val 0.2345 | Acc train 0.892 | Acc val 0.916 | LR 1.00e-04 | 10.8s
+Epoch  12/20 | Loss train 0.2464 | Loss val 0.2426 | Acc train 0.897 | Acc val 0.918 | LR 1.00e-04 | 10.9s
+Epoch  13/20 | Loss train 0.2476 | Loss val 0.2426 | Acc train 0.894 | Acc val 0.918 | LR 1.00e-04 | 11.1s
+Epoch  14/20 | Loss train 0.2421 | Loss val 0.2295 | Acc train 0.899 | Acc val 0.925 | LR 1.00e-04 | 11.2s
+Epoch  15/20 | Loss train 0.2397 | Loss val 0.2314 | Acc train 0.900 | Acc val 0.921 | LR 1.00e-05 | 11.0s
+Epoch  16/20 | Loss train 0.2427 | Loss val 0.2337 | Acc train 0.896 | Acc val 0.922 | LR 1.00e-05 | 11.5s
+Epoch  17/20 | Loss train 0.2400 | Loss val 0.2330 | Acc train 0.899 | Acc val 0.922 | LR 1.00e-05 | 11.0s
+Epoch  18/20 | Loss train 0.2383 | Loss val 0.2303 | Acc train 0.898 | Acc val 0.922 | LR 1.00e-05 | 10.9s
+Epoch  19/20 | Loss train 0.2400 | Loss val 0.2299 | Acc train 0.898 | Acc val 0.923 | LR 1.00e-05 | 11.1s
+Epoch  20/20 | Loss train 0.2398 | Loss val 0.2295 | Acc train 0.900 | Acc val 0.921 | LR 1.00e-05 | 11.2s
+=== Entrainement avec scheduler termine ===
+>>> Figure sauvegardee : comparaison_scheduler.png
+>>> Figure sauvegardee : evolution_lr.png
+Meilleure accuracy val avec scheduler : 0.9250 (epoch 14)

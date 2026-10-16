@@ -1,0 +1,24 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 01 : premier entrainement complet du CNN simple (essai 1), num_workers=4.
+=== Debut de l'entrainement ===
+Epoch   1/20 | Loss train 0.4508 | Loss val 0.3641 | Acc train 0.788 | Acc val 0.832 | 126.4s
+Epoch   2/20 | Loss train 0.3667 | Loss val 0.3451 | Acc train 0.836 | Acc val 0.860 | 27.7s
+Epoch   3/20 | Loss train 0.3382 | Loss val 0.3223 | Acc train 0.855 | Acc val 0.890 | 24.7s
+Epoch   4/20 | Loss train 0.3209 | Loss val 0.2916 | Acc train 0.859 | Acc val 0.885 | 24.7s
+Epoch   5/20 | Loss train 0.3173 | Loss val 0.2796 | Acc train 0.865 | Acc val 0.884 | 22.5s
+Epoch   6/20 | Loss train 0.3073 | Loss val 0.2763 | Acc train 0.871 | Acc val 0.897 | 24.3s
+Epoch   7/20 | Loss train 0.3008 | Loss val 0.2823 | Acc train 0.871 | Acc val 0.896 | 23.4s
+Epoch   8/20 | Loss train 0.2862 | Loss val 0.2541 | Acc train 0.877 | Acc val 0.917 | 46.8s
+Epoch   9/20 | Loss train 0.2841 | Loss val 0.2795 | Acc train 0.880 | Acc val 0.889 | 49.7s
+Epoch  10/20 | Loss train 0.2765 | Loss val 0.2668 | Acc train 0.882 | Acc val 0.911 | 23.0s
+Epoch  11/20 | Loss train 0.2675 | Loss val 0.2613 | Acc train 0.888 | Acc val 0.909 | 24.1s
+Epoch  12/20 | Loss train 0.2552 | Loss val 0.2360 | Acc train 0.893 | Acc val 0.922 | 22.9s
+Epoch  13/20 | Loss train 0.2598 | Loss val 0.2468 | Acc train 0.893 | Acc val 0.928 | 23.2s
+Epoch  14/20 | Loss train 0.2416 | Loss val 0.3165 | Acc train 0.899 | Acc val 0.866 | 23.5s
+Epoch  15/20 | Loss train 0.2430 | Loss val 0.2580 | Acc train 0.897 | Acc val 0.909 | 22.8s
+Epoch  16/20 | Loss train 0.2272 | Loss val 0.2379 | Acc train 0.906 | Acc val 0.928 | 23.4s
+Epoch  17/20 | Loss train 0.2230 | Loss val 0.2450 | Acc train 0.908 | Acc val 0.928 | 23.4s
+Epoch  18/20 | Loss train 0.2142 | Loss val 0.2492 | Acc train 0.911 | Acc val 0.918 | 22.6s
+Epoch  19/20 | Loss train 0.2082 | Loss val 0.2259 | Acc train 0.914 | Acc val 0.925 | 75.6s
+Epoch  20/20 | Loss train 0.1907 | Loss val 0.2402 | Acc train 0.923 | Acc val 0.916 | 37.0s
+=== Entrainement termine ===

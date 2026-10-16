@@ -1,0 +1,80 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 02 : CNN simple (essai 2) puis CNN + normalisation (essai 1). Debut du log tronque a la capture.
+>>> Figure sauvegardee : distribution_classes.png
+
+Taille originale (PIL) : (224, 224)
+Type des pixels PIL : <class 'tuple'>
+Forme du tenseur : torch.Size([3, 224, 224])
+Valeur min : 0.0000
+Valeur max : 0.9412
+>>> Figure sauvegardee : canaux_rgb.png
+
+Taille du train set : 11879
+Taille du val set : 2000
+Classes : ['Benign', 'Malignant']
+Mapping classe -> entier : {'Benign': 0, 'Malignant': 1}
+Forme d'un batch d'images : torch.Size([32, 3, 224, 224])
+Forme des labels : torch.Size([32])
+>>> Figure sauvegardee : batch_train.png
+
+Modele cree : SimpleCNN avec 2 classes
+Parametres entrainables : 12,869,410
+Forme d'entree : torch.Size([32, 3, 224, 224])
+Forme de sortie : torch.Size([32, 2])
+
+=== Debut de l'entrainement ===
+
+Epoch   1/20 | Loss train 0.4248 | Loss val 0.3279 | Acc train 0.807 | Acc val 0.851 | 11.1s
+Epoch   2/20 | Loss train 0.3514 | Loss val 0.3929 | Acc train 0.846 | Acc val 0.830 | 10.7s
+Epoch   3/20 | Loss train 0.3249 | Loss val 0.3511 | Acc train 0.858 | Acc val 0.854 | 10.8s
+Epoch   4/20 | Loss train 0.3139 | Loss val 0.3555 | Acc train 0.866 | Acc val 0.863 | 11.5s
+Epoch   5/20 | Loss train 0.3044 | Loss val 0.2799 | Acc train 0.870 | Acc val 0.901 | 11.1s
+Epoch   6/20 | Loss train 0.2924 | Loss val 0.2623 | Acc train 0.872 | Acc val 0.915 | 11.1s
+Epoch   7/20 | Loss train 0.2819 | Loss val 0.2849 | Acc train 0.879 | Acc val 0.897 | 11.2s
+Epoch   8/20 | Loss train 0.2730 | Loss val 0.2632 | Acc train 0.884 | Acc val 0.911 | 11.2s
+Epoch   9/20 | Loss train 0.2569 | Loss val 0.3281 | Acc train 0.891 | Acc val 0.872 | 10.7s
+Epoch  10/20 | Loss train 0.2446 | Loss val 0.2759 | Acc train 0.898 | Acc val 0.892 | 10.4s
+Epoch  11/20 | Loss train 0.2471 | Loss val 0.2392 | Acc train 0.896 | Acc val 0.921 | 10.4s
+Epoch  12/20 | Loss train 0.2372 | Loss val 0.2321 | Acc train 0.901 | Acc val 0.918 | 10.8s
+Epoch  13/20 | Loss train 0.2235 | Loss val 0.2274 | Acc train 0.907 | Acc val 0.927 | 11.2s
+Epoch  14/20 | Loss train 0.2093 | Loss val 0.2277 | Acc train 0.913 | Acc val 0.922 | 11.1s
+Epoch  15/20 | Loss train 0.1969 | Loss val 0.2729 | Acc train 0.917 | Acc val 0.900 | 10.6s
+Epoch  16/20 | Loss train 0.1886 | Loss val 0.2507 | Acc train 0.925 | Acc val 0.914 | 10.7s
+Epoch  17/20 | Loss train 0.1824 | Loss val 0.2127 | Acc train 0.923 | Acc val 0.934 | 10.6s
+Epoch  18/20 | Loss train 0.1653 | Loss val 0.2208 | Acc train 0.934 | Acc val 0.931 | 10.4s
+Epoch  19/20 | Loss train 0.1522 | Loss val 0.2491 | Acc train 0.937 | Acc val 0.909 | 10.8s
+Epoch  20/20 | Loss train 0.1406 | Loss val 0.2187 | Acc train 0.944 | Acc val 0.936 | 11.0s
+
+=== Entrainement termine ===
+>>> Figure sauvegardee : courbes_cnn_simple.png
+
+Mean par canal (R, G, B) : tensor([0.7228, 0.5555, 0.5390])
+Std par canal (R, G, B) : tensor([0.1886, 0.1974, 0.2110])
+>>> Figure sauvegardee : normalisation_effet.png
+
+=== Entrainement avec normalisation ===
+
+Epoch   1/20 | Loss train 0.3885 | Loss val 0.3071 | Acc train 0.830 | Acc val 0.891 | 11.4s
+Epoch   2/20 | Loss train 0.3196 | Loss val 0.2888 | Acc train 0.865 | Acc val 0.892 | 12.2s
+Epoch   3/20 | Loss train 0.3011 | Loss val 0.2704 | Acc train 0.873 | Acc val 0.900 | 11.2s
+Epoch   4/20 | Loss train 0.2805 | Loss val 0.2095 | Acc train 0.882 | Acc val 0.934 | 11.4s
+Epoch   5/20 | Loss train 0.2556 | Loss val 0.2524 | Acc train 0.896 | Acc val 0.907 | 11.4s
+Epoch   6/20 | Loss train 0.2322 | Loss val 0.2554 | Acc train 0.903 | Acc val 0.894 | 11.0s
+Epoch   7/20 | Loss train 0.2136 | Loss val 0.2185 | Acc train 0.915 | Acc val 0.919 | 10.8s
+Epoch   8/20 | Loss train 0.1811 | Loss val 0.1990 | Acc train 0.930 | Acc val 0.923 | 12.4s
+Epoch   9/20 | Loss train 0.1474 | Loss val 0.2082 | Acc train 0.945 | Acc val 0.923 | 11.9s
+Epoch  10/20 | Loss train 0.1256 | Loss val 0.2151 | Acc train 0.953 | Acc val 0.919 | 11.1s
+Epoch  11/20 | Loss train 0.1022 | Loss val 0.2205 | Acc train 0.961 | Acc val 0.927 | 11.5s
+Epoch  12/20 | Loss train 0.0982 | Loss val 0.2179 | Acc train 0.965 | Acc val 0.927 | 11.0s
+Epoch  13/20 | Loss train 0.0759 | Loss val 0.2080 | Acc train 0.973 | Acc val 0.943 | 12.0s
+Epoch  14/20 | Loss train 0.0563 | Loss val 0.2784 | Acc train 0.980 | Acc val 0.938 | 11.5s
+Epoch  15/20 | Loss train 0.0641 | Loss val 0.3187 | Acc train 0.979 | Acc val 0.925 | 12.8s
+Epoch  16/20 | Loss train 0.0587 | Loss val 0.2695 | Acc train 0.979 | Acc val 0.936 | 10.9s
+Epoch  17/20 | Loss train 0.0369 | Loss val 0.2360 | Acc train 0.987 | Acc val 0.950 | 11.5s
+Epoch  18/20 | Loss train 0.0461 | Loss val 0.2491 | Acc train 0.985 | Acc val 0.939 | 10.9s
+Epoch  19/20 | Loss train 0.0324 | Loss val 0.2626 | Acc train 0.990 | Acc val 0.942 | 11.3s
+Epoch  20/20 | Loss train 0.0367 | Loss val 0.2951 | Acc train 0.988 | Acc val 0.947 | 11.0s
+
+=== Entrainement avec normalisation termine ===
+>>> Figure sauvegardee : comparaison_normalisation.png
+ICE default IO error handler doing an exit(), pid = 100535, errno = 32

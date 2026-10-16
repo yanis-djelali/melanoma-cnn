@@ -1,0 +1,8 @@
+# Python >= 3.9. Versions not pinned: the exact versions used in May 2026 were not recorded.
+torch
+torchvision>=0.13   # models.ResNet18_Weights API
+numpy
+matplotlib
+pillow
+scikit-learn
+tensorboard         # optional: --tensorboard and scripts/export_tensorboard.py

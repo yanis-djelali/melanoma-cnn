@@ -1,0 +1,40 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification.
+# Run 09 : ResNet18 fine-tuning layer4 + fc re-entraine (essai 3) pour la partie 13. Seule l'accuracy val etait affichee.
+# La matrice de confusion porte sur le modele a la fin de l'epoch 20.
+=== Partie 13 : reentrainement du meilleur modele pour analyse ===
+Reentrainement rapide pour avoir le modele en memoire...
+Epoch   1/20 | Acc val 0.916
+Epoch   2/20 | Acc val 0.892
+Epoch   3/20 | Acc val 0.920
+Epoch   4/20 | Acc val 0.902
+Epoch   5/20 | Acc val 0.931
+Epoch   6/20 | Acc val 0.922
+Epoch   7/20 | Acc val 0.931
+Epoch   8/20 | Acc val 0.933
+Epoch   9/20 | Acc val 0.929
+Epoch  10/20 | Acc val 0.941
+Epoch  11/20 | Acc val 0.924
+Epoch  12/20 | Acc val 0.941
+Epoch  13/20 | Acc val 0.951
+Epoch  14/20 | Acc val 0.935
+Epoch  15/20 | Acc val 0.945
+Epoch  16/20 | Acc val 0.935
+Epoch  17/20 | Acc val 0.948
+Epoch  18/20 | Acc val 0.942
+Epoch  19/20 | Acc val 0.943
+Epoch  20/20 | Acc val 0.940
+=== Reentrainement termine, debut analyse ===
+Matrice de confusion :
+[[947  53]
+ [ 68 932]]
+Classification report :
+              precision    recall  f1-score   support
+      Benign       0.93      0.95      0.94      1000
+   Malignant       0.95      0.93      0.94      1000
+    accuracy                           0.94      2000
+   macro avg       0.94      0.94      0.94      2000
+weighted avg       0.94      0.94      0.94      2000
+>>> Figure sauvegardee : matrice_confusion.png
+Erreurs collectees : 8 | Succes : 8
+>>> Figure sauvegardee : erreurs.png
+>>> Figure sauvegardee : succes.png

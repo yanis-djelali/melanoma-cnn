@@ -1,0 +1,33 @@
+# Sortie console reelle (machine GPU ENSEIRB, avril-mai 2026), copiee sans modification des lignes Epoch.
+# Run 06 : ResNet18 pre-entraine ImageNet, backbone gele, seule la couche fc est entrainee (Adam lr=1e-3).
+=== Entrainement ResNet18 (backbone gele) ===
+Downloading: "https://download.pytorch.org/models/resnet18-f37072fd.pth"
+100%|##########| 44.7M/44.7M [00:00<00:00, 104MB/s]
+--- Parametres ResNet18 ---
+Parametres entrainables : 1,026
+Parametres totaux       : 11,177,538
+Ratio entrainables/total : 0.0092%
+Epoch   1/20 | Loss train 0.4112 | Loss val 0.3270 | Acc train 0.812 | Acc val 0.868 | 11.3s
+Epoch   2/20 | Loss train 0.3446 | Loss val 0.3156 | Acc train 0.851 | Acc val 0.867 | 11.1s
+Epoch   3/20 | Loss train 0.3361 | Loss val 0.3038 | Acc train 0.854 | Acc val 0.874 | 11.5s
+Epoch   4/20 | Loss train 0.3314 | Loss val 0.3153 | Acc train 0.856 | Acc val 0.867 | 11.4s
+Epoch   5/20 | Loss train 0.3245 | Loss val 0.2930 | Acc train 0.859 | Acc val 0.880 | 11.2s
+Epoch   6/20 | Loss train 0.3283 | Loss val 0.2919 | Acc train 0.861 | Acc val 0.873 | 11.1s
+Epoch   7/20 | Loss train 0.3260 | Loss val 0.2885 | Acc train 0.858 | Acc val 0.876 | 11.1s
+Epoch   8/20 | Loss train 0.3207 | Loss val 0.2940 | Acc train 0.863 | Acc val 0.878 | 11.1s
+Epoch   9/20 | Loss train 0.3204 | Loss val 0.2871 | Acc train 0.861 | Acc val 0.883 | 11.1s
+Epoch  10/20 | Loss train 0.3158 | Loss val 0.3481 | Acc train 0.863 | Acc val 0.840 | 11.1s
+Epoch  11/20 | Loss train 0.3169 | Loss val 0.3186 | Acc train 0.864 | Acc val 0.869 | 11.1s
+Epoch  12/20 | Loss train 0.3178 | Loss val 0.2853 | Acc train 0.859 | Acc val 0.884 | 11.1s
+Epoch  13/20 | Loss train 0.3227 | Loss val 0.2856 | Acc train 0.860 | Acc val 0.886 | 11.1s
+Epoch  14/20 | Loss train 0.3228 | Loss val 0.2850 | Acc train 0.863 | Acc val 0.886 | 11.1s
+Epoch  15/20 | Loss train 0.3169 | Loss val 0.3002 | Acc train 0.862 | Acc val 0.878 | 11.1s
+Epoch  16/20 | Loss train 0.3302 | Loss val 0.2815 | Acc train 0.859 | Acc val 0.883 | 11.2s
+Epoch  17/20 | Loss train 0.3187 | Loss val 0.2941 | Acc train 0.863 | Acc val 0.879 | 11.2s
+Epoch  18/20 | Loss train 0.3221 | Loss val 0.2820 | Acc train 0.861 | Acc val 0.885 | 11.2s
+Epoch  19/20 | Loss train 0.3061 | Loss val 0.2907 | Acc train 0.869 | Acc val 0.878 | 11.1s
+Epoch  20/20 | Loss train 0.3188 | Loss val 0.2843 | Acc train 0.861 | Acc val 0.880 | 11.1s
+=== Entrainement ResNet termine ===
+>>> Figure sauvegardee : courbes_resnet_gele.png
+>>> Figure sauvegardee : comparaison_resnet.png
+Meilleure accuracy val ResNet : 0.8860 (epoch 13)

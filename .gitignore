@@ -1,0 +1,13 @@
+# Dataset (download it from Kaggle, never commit it)
+melanoma-cancer-dataset/
+
+# Training outputs
+checkpoints/
+runs/
+results/analysis/
+figures/exploration/
+figures/analysis/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
